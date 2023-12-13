@@ -1,0 +1,80 @@
+//webpack.config.js
+
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');  // html 插件
+
+
+const path = require('path');
+const isDev = process.env.NODE_ENV === 'development';
+const config = require('./public/config')[isDev ? 'dev' : 'build'];
+
+module.exports = {
+  // mode: 'development',
+  mode: "development",
+  entry: './src/index.js', //webpack的默认配置
+  output: {
+    path: path.resolve(__dirname, 'dist'), //必须是绝对路径
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        use: {
+          loader: 'babel-loader',
+          // Loaders 主要用于处理非 JavaScript 文件。Webpack 将一切视为模块，但默认情况下，
+          // 它只知道如何处理 JavaScript 文件。Loaders 用于将非 JavaScript 文件转换为 Webpack 能够处理的有效模块，
+          // 这样这些文件就能够被添加到依赖图中。
+
+          options: {
+            presets: ["@babel/preset-env"],
+            plugins: [
+              [
+                "@babel/plugin-transform-runtime",
+                {
+                  "corejs": 3
+                }
+              ]
+            ]
+          }
+        },
+        exclude: /node_modules/
+      },
+      {
+        test: '/\.(less|css)$/',
+        use: [
+          'style-loader',
+          'css-loader',
+          'less-loader',
+        ],
+      },
+    ]
+  },
+  // Plugins 用于执行各种构建任务，从而实现一些额外的功能。它们可以用于优化、压缩、携带环境变量等各种用途。
+  // Plugins 可以监听 webpack 构建过程中的生命周期事件，执行特定的任务。
+  plugins: [
+    //不需要传参数喔，它可以找到 outputPath
+    new CleanWebpackPlugin(), // 每次打包 清楚dist
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      filename: 'index.html', //打包后的文件名
+      config: config.template,
+      minify: {
+        removeAttributeQuotes: false, //是否删除属性的双引号
+        collapseWhitespace: false, //是否折叠空白
+      },
+      // hash: true //是否加上hash，默认是 false
+    })
+  ],
+  devServer: {
+    port: '3000', //默认是8080
+
+  },
+  // 常用 的plugins
+  // HtmlWebpackPlugin： 自动生成 HTML 文件，并将打包后的脚本文件自动注入到 HTML 文件中。
+  // MiniCssExtractPlugin： 用于将 CSS 提取到单独的文件中，而不是将其嵌入到 JavaScript 中。
+  // CleanWebpackPlugin： 在每次构建前清理输出目录，防止旧文件残留。
+  // DefinePlugin： 定义全局变量，可用于设置环境变量。
+  // CopyWebpackPlugin： 用于复制文件或目录到构建目录。
+
+}
