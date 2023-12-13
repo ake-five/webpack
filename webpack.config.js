@@ -14,7 +14,7 @@ module.exports = {
   entry: './src/index.js', //webpack的默认配置
   output: {
     path: path.resolve(__dirname, 'dist'), //必须是绝对路径
-    filename: 'bundle.js',
+    filename: 'bundle.[hash].js',
   },
   module: {
     rules: [
@@ -41,13 +41,25 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: '/\.(less|css)$/',
-        use: [
-          'style-loader',
-          'css-loader',
-          'less-loader',
-        ],
+        test: /\.(le|c)ss$/,
+        use: ['style-loader', 'css-loader',
+          'less-loader'],
+        exclude: /node_modules/
       },
+      {
+        test: /\.(png|jpg|gif|jpeg|webp|svg|eot|ttf|woff|woff2)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10240, //10K
+              esModule: false,
+              name: '[name]_[hash:6].[ext]'
+            }
+          }
+        ],
+        exclude: /node_modules/
+      }
     ]
   },
   // Plugins 用于执行各种构建任务，从而实现一些额外的功能。它们可以用于优化、压缩、携带环境变量等各种用途。

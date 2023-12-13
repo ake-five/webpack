@@ -57,3 +57,16 @@
 ### 更多信息
 
 >[带你深度解锁Webpack系列(基础篇)](https://juejin.im/post/5e5c65fc6fb9a07cd00d8838)
+### 常用的plugins
+- HtmlWebpackPlugin： 自动生成 HTML 文件，并将打包后的脚本文件自动注入到 HTML 文件中。
+- MiniCssExtractPlugin： 用于将 CSS 提取到单独的文件中，而不是将其嵌入到 JavaScript 中。
+- CleanWebpackPlugin： 在每次构建前清理输出目录，防止旧文件残留。
+- DefinePlugin： 定义全局变量，可用于设置环境变量。
+-  CopyWebpackPlugin： 用于复制文件或目录到构建目录。
+### 常用的loader
+- bobal-loader 转换jsx文件
+- style-loater 
+- url-loader 
+  - 我们可以使用 url-loader 或者 file-loader 来处理本地的资源文件。url-loader 和 file-loader 的功能类似，但是 url-loader 可以指定在文件大小小于指定的限制时，返回 DataURL，因此，个人会优先选择使用 url-loader。
+- less-loader
+- file-loader
