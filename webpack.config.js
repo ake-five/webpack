@@ -13,7 +13,7 @@ module.exports = {
   mode: "development",
   entry: './src/index.js', //webpack的默认配置
   output: {
-    path: path.resolve(__dirname, 'dist'), //必须是绝对路径
+    path: path.resolve(__dirname, 'docs'), //必须是绝对路径
     filename: 'bundle.[hash].js',
   },
   module: {
