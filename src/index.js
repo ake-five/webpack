@@ -55,7 +55,7 @@ function FunctionComponent(props) {
   useEffect(start, [])
 
   return (
-    <Router>
+    <Router basename="webpack">
       <div className="box">
         {/* 左边菜单 */}
         <MenuNavdgate />
