@@ -15,45 +15,57 @@ function getItem(label, key, icon, children, type) {
   };
 }
 const items = [
-  getItem('react-manage', '/react-manage', null),
+  getItem('微应用1', '/reactdome1', null),
+  getItem('微应用2', '/react-ts-manage', null),
 ];
 
-const MenuNavdgate = () => {
-  const navigate = useNavigate();
-  const onClick = (e) => {
-    // console.log(e, location)
-    navigate(e.key)
-  };
-  return (
-    <nav className="nav">
-      <Menu
-        onClick={onClick}
-        style={{
-          width: 200,
-          height: '100%'
-        }}
-        defaultSelectedKeys={['/react-manage']}
-        defaultOpenKeys={['/react-manage']}
-        mode="inline"
-        items={items}
-      />
-    </nav>
-  );
-};
 
+const microApps = [
+  {
+    name: '微应用dome1', // app已经注册的名字
+    entry: '//ake-five.github.io/react-manage',  // 进入的主机端口号
+    activeRule: '/webpack/reactdome1',  // 找到微应用的路径
+  },
+  {
+    name: '微应用dome2', // app已经注册的名字
+    entry: '//localhost:3001',  // 进入的主机端口号
+    activeRule: '/webpack/react-ts-manage',  // 找到微应用的路径
+  },
+].map(item => {
+  return {
+    ...item,
+    container: '#container',  // 类似于一个容器，起到占位的作用
+  }
+})
 function FunctionComponent(props) {
   // const location = useLocation()
+  const [activeNav, setActiveAnv] = useState('/reactdome1')
+  registerMicroApps(microApps);
+  useEffect(() => {
+    start()
+    setActiveAnv(window.location.pathname.replace('/webpack', ''))
+  }, [])
+  const MenuNavdgate = () => {
+    const onClick = (e) => {
+      window.location.href = `${window.location.origin}/webpack${e.key}`
 
-  registerMicroApps([
-    {
-      name: 'react app', // app已经注册的名字
-      entry: '//localhost:2023',  // 进入的主机端口号
-      container: '#container',  // 类似于一个容器，起到占位的作用
-      activeRule: '/react-manage',  // 找到微应用的路径
-    },
-  ]);
-  useEffect(start, [])
-
+    };
+    return (
+      <nav className="nav">
+        <Menu
+          onClick={onClick}
+          style={{
+            width: 200,
+            height: '100%'
+          }}
+          defaultSelectedKeys={[activeNav]}
+          defaultOpenKeys={[activeNav]}
+          mode="inline"
+          items={items}
+        />
+      </nav>
+    );
+  };
   return (
     <Router basename="webpack">
       <div className="box">
@@ -63,8 +75,8 @@ function FunctionComponent(props) {
         <div style={{ flex: 1, padding: '20px' }}>
 
           <Routes>
-            {/* <Route path="/" element={<Navigate to="/react-manage" />} /> */}
-            <Route path="/react-manage" element={<div id="container" />} />
+            {/* <Route path="/" element={<Navigate to="/react-ts-manage" />} /> */}
+            <Route path={activeNav} element={<div id='container' />} />
           </Routes>
         </div>
       </div>

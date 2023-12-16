@@ -15,6 +15,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'docs'), //必须是绝对路径
     filename: 'bundle.[hash].js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -90,7 +91,10 @@ module.exports = {
   ],
   devServer: {
     port: '3000', //默认是8080
-
+    static: {
+      directory: path.resolve(__dirname, 'public'), // 设置静态文件服务的根目录
+    },
+    historyApiFallback: true,
   },
   // 常用 的plugins
   // HtmlWebpackPlugin： 自动生成 HTML 文件，并将打包后的脚本文件自动注入到 HTML 文件中。
