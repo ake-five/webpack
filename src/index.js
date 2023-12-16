@@ -1,10 +1,11 @@
-import React, { useReducer, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { createRoot } from 'react-dom/client';
 import { registerMicroApps, start } from 'qiankun';
 import "./styles/index.less";
-import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import { Menu } from 'antd';
 
+import config from '../public/config'
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -14,41 +15,29 @@ function getItem(label, key, icon, children, type) {
     type,
   };
 }
-const items = [
-  getItem('微应用1', '/reactdome1', null),
-  getItem('微应用2', '/react-ts-manage', null),
-];
+const items = config[process.env.NODE_ENV].microApps.map(item => {
+  return getItem(item.name, item.activeRule, null)
+})
 
 
-const microApps = [
-  {
-    name: '微应用dome1', // app已经注册的名字
-    entry: '//ake-five.github.io/react-manage',  // 进入的主机端口号
-    activeRule: '/webpack/reactdome1',  // 找到微应用的路径
-  },
-  {
-    name: '微应用dome2', // app已经注册的名字
-    entry: '//localhost:3001',  // 进入的主机端口号
-    activeRule: '/webpack/react-ts-manage',  // 找到微应用的路径
-  },
-].map(item => {
+const microApps = config[process.env.NODE_ENV].microApps.map(item => {
   return {
     ...item,
     container: '#container',  // 类似于一个容器，起到占位的作用
   }
 })
-function FunctionComponent(props) {
+function FunctionComponent() {
   // const location = useLocation()
-  const [activeNav, setActiveAnv] = useState('/reactdome1')
+  const [activeNav, setActiveAnv] = useState(window.location.pathname)
+
   registerMicroApps(microApps);
   useEffect(() => {
     start()
-    setActiveAnv(window.location.pathname.replace('/webpack', ''))
+    setActiveAnv(window.location.pathname)
   }, [])
   const MenuNavdgate = () => {
     const onClick = (e) => {
-      window.location.href = `${window.location.origin}/webpack${e.key}`
-
+      window.location.href = `${window.location.origin}${e.key}`
     };
     return (
       <nav className="nav">
@@ -74,10 +63,7 @@ function FunctionComponent(props) {
         {/* 右边路由内容 */}
         <div style={{ flex: 1, padding: '20px' }}>
 
-          <Routes>
-            {/* <Route path="/" element={<Navigate to="/react-ts-manage" />} /> */}
-            <Route path={activeNav} element={<div id='container' />} />
-          </Routes>
+          <div id='container' />
         </div>
       </div>
     </Router>

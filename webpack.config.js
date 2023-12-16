@@ -5,8 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');  // html 插件
 
 
 const path = require('path');
-const isDev = process.env.NODE_ENV === 'development';
-const config = require('./public/config')[isDev ? 'dev' : 'build'];
+const config = require('./public/config')[process.env.NODE_ENV];
 
 module.exports = {
   // mode: 'development',
