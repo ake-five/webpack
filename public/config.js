@@ -2,14 +2,14 @@
 module.exports = {
   dev: {
       template: {
-          title: '你好',
+          title: '主应用-dev',
           header: false,
           footer: false
       }
   },
   build: {
       template: {
-          title: '你好才怪',
+          title: '应用集成平台',
           header: true,
           footer: false
       }
