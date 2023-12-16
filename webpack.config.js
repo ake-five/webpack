@@ -15,7 +15,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'docs'), //必须是绝对路径
     filename: 'bundle.[hash].js',
-    publicPath: '/',
+    // publicPath: '/',
   },
   module: {
     rules: [
