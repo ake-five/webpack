@@ -26,6 +26,9 @@ const microApps = config[process.env.NODE_ENV].microApps.map(item => {
     container: '#container',  // 类似于一个容器，起到占位的作用
   }
 })
+console.log('====================================');
+console.log(microApps);
+console.log('====================================');
 function FunctionComponent() {
   // const location = useLocation()
   const [activeNav, setActiveAnv] = useState(window.location.pathname)
