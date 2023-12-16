@@ -1555,7 +1555,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((module) => {
 
-eval("//public/config.js 除了以下的配置之外，这里面还可以有许多其他配置，例如,pulicPath 的路径等等\nmodule.exports = {\n  defaultMicroApp: '/webpack/reactdome1',\n  development: {\n    template: {\n      title: '主应用-dev',\n      header: false,\n      footer: false\n    },\n    microApps: [{\n      name: '微应用dome1',\n      // app已经注册的名字\n      entry: '//localhost:3001',\n      // 进入的主机端口号\n      activeRule: '/webpack/reactdome1' // 找到微应用的路径\n    }, {\n      name: '微应用dome2',\n      // app已经注册的名字\n      entry: '//localhost:3001',\n      // 进入的主机端口号\n      activeRule: '/webpack/react-ts-manage' // 找到微应用的路径\n    }]\n  },\n  production: {\n    template: {\n      title: '应用集成平台',\n      header: true,\n      footer: false\n    },\n    microApps: [{\n      name: '微应用dome1',\n      // app已经注册的名字\n      entry: '//ake-five.github.io/react-manage',\n      // 进入的主机端口号\n      activeRule: '/webpack/reactdome1' // 找到微应用的路径\n    }\n    // {\n    //   name: '微应用dome2', // app已经注册的名字\n    //   entry: '//localhost:3001',  // 进入的主机端口号\n    //   activeRule: '/webpack/react-ts-manage',  // 找到微应用的路径\n    // },\n    ]\n  }\n};\n\n//# sourceURL=webpack://webpack/./public/config.js?");
+eval("//public/config.js 除了以下的配置之外，这里面还可以有许多其他配置，例如,pulicPath 的路径等等\nmodule.exports = {\n  defaultMicroApp: '/webpack/reactdome1',\n  development: {\n    template: {\n      title: '主应用-dev',\n      header: false,\n      footer: false\n    },\n    microApps: [{\n      name: '微应用dome1',\n      // app已经注册的名字\n      entry: '//ake-five.github.io/react-manage',\n      // 进入的主机端口号\n      activeRule: '/webpack/reactdome1' // 找到微应用的路径\n    }, {\n      name: '微应用dome2',\n      // app已经注册的名字\n      entry: '//localhost:3001',\n      // 进入的主机端口号\n      activeRule: '/webpack/react-ts-manage' // 找到微应用的路径\n    }]\n  },\n  production: {\n    template: {\n      title: '应用集成平台',\n      header: true,\n      footer: false\n    },\n    microApps: [{\n      name: '微应用dome1',\n      // app已经注册的名字\n      entry: '//ake-five.github.io/react-manage',\n      // 进入的主机端口号\n      activeRule: '/webpack/reactdome1' // 找到微应用的路径\n    }\n    // {\n    //   name: '微应用dome2', // app已经注册的名字\n    //   entry: '//localhost:3001',  // 进入的主机端口号\n    //   activeRule: '/webpack/react-ts-manage',  // 找到微应用的路径\n    // },\n    ]\n  }\n};\n\n//# sourceURL=webpack://webpack/./public/config.js?");
 
 /***/ }),
 
@@ -1566,7 +1566,7 @@ eval("//public/config.js 除了以下的配置之外，这里面还可以有许�
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/keys */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/keys.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/get-own-property-symbols */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/get-own-property-symbols.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/filter */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/filter.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptor */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptor.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/for-each */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/for-each.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptors */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptors.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/define-properties */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/define-properties.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/define-property */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/define-property.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _babel_runtime_corejs3_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs3/helpers/slicedToArray */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_corejs3_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs3/helpers/defineProperty */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/defineProperty.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/map */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/map.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/concat */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/concat.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var qiankun__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! qiankun */ \"./node_modules/qiankun/es/apis.js\");\n/* harmony import */ var _styles_index_less__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./styles/index.less */ \"./src/styles/index.less\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/dist/index.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/menu/index.js\");\n/* harmony import */ var _public_config__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../public/config */ \"./public/config.js\");\n/* harmony import */ var _public_config__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_public_config__WEBPACK_IMPORTED_MODULE_15__);\n\n\n\n\n\n\n\n\n\n\nvar _context, _context2;\nfunction ownKeys(e, r) { var t = _babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(e); if ((_babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default())) { var o = _babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(e); r && (o = _babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2___default()(o).call(o, function (r) { return _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(e, r).enumerable; })), t.push.apply(t, o); } return t; }\nfunction _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var _context4, _context5; var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4___default()(_context4 = ownKeys(Object(t), !0)).call(_context4, function (r) { (0,_babel_runtime_corejs3_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9__[\"default\"])(e, r, t[r]); }) : (_babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5___default()) ? _babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6___default()(e, _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5___default()(t)) : _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4___default()(_context5 = ownKeys(Object(t))).call(_context5, function (r) { _babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7___default()(e, r, _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(t, r)); }); } return e; }\n\n\n\n\n\n\n\n\n\nfunction getItem(label, key, icon, children, type) {\n  return {\n    key: key,\n    icon: icon,\n    children: children,\n    label: label,\n    type: type\n  };\n}\nvar items = _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_10___default()(_context = (_public_config__WEBPACK_IMPORTED_MODULE_15___default())[\"development\"].microApps).call(_context, function (item) {\n  return getItem(item.name, item.activeRule, null);\n});\nvar microApps = _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_10___default()(_context2 = (_public_config__WEBPACK_IMPORTED_MODULE_15___default())[\"development\"].microApps).call(_context2, function (item) {\n  return _objectSpread(_objectSpread({}, item), {}, {\n    container: '#container' // 类似于一个容器，起到占位的作用\n  });\n});\nconsole.log('====================================');\nconsole.log(microApps);\nconsole.log('====================================');\nfunction FunctionComponent() {\n  // const location = useLocation()\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_12__.useState)(window.location.pathname),\n    _useState2 = (0,_babel_runtime_corejs3_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_8__[\"default\"])(_useState, 2),\n    activeNav = _useState2[0],\n    setActiveAnv = _useState2[1];\n  (0,qiankun__WEBPACK_IMPORTED_MODULE_16__.registerMicroApps)(microApps);\n  (0,react__WEBPACK_IMPORTED_MODULE_12__.useEffect)(function () {\n    (0,qiankun__WEBPACK_IMPORTED_MODULE_16__.start)();\n    setActiveAnv(window.location.pathname);\n  }, []);\n  var MenuNavdgate = function MenuNavdgate() {\n    var onClick = function onClick(e) {\n      var _context3;\n      window.location.href = _babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_11___default()(_context3 = \"\".concat(window.location.origin)).call(_context3, e.key);\n    };\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(\"nav\", {\n      className: \"nav\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(antd__WEBPACK_IMPORTED_MODULE_17__[\"default\"], {\n      onClick: onClick,\n      style: {\n        width: 200,\n        height: '100%'\n      },\n      defaultSelectedKeys: [activeNav],\n      defaultOpenKeys: [activeNav],\n      mode: \"inline\",\n      items: items\n    }));\n  };\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.BrowserRouter, {\n    basename: \"webpack\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(\"div\", {\n    className: \"box\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(MenuNavdgate, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(\"div\", {\n    style: {\n      flex: 1,\n      padding: '20px'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(\"div\", {\n    id: \"container\"\n  }))));\n}\nvar jsx = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(\"div\", {\n  className: \"border\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default().createElement(FunctionComponent, {\n  name: \"FunctionComponent\"\n}));\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_dom_client__WEBPACK_IMPORTED_MODULE_13__.createRoot)(document.getElementById('root')).render(jsx));\n\n//# sourceURL=webpack://webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/keys */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/keys.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/get-own-property-symbols */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/get-own-property-symbols.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/filter */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/filter.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptor */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptor.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/for-each */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/for-each.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptors */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptors.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/define-properties */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/define-properties.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/define-property */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/object/define-property.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _babel_runtime_corejs3_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs3/helpers/defineProperty */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/defineProperty.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/map */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/map.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/concat */ \"./node_modules/@babel/runtime-corejs3/core-js-stable/instance/concat.js\");\n/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var qiankun__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! qiankun */ \"./node_modules/qiankun/es/apis.js\");\n/* harmony import */ var _styles_index_less__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./styles/index.less */ \"./src/styles/index.less\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/dist/index.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/menu/index.js\");\n/* harmony import */ var _public_config__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../public/config */ \"./public/config.js\");\n/* harmony import */ var _public_config__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_public_config__WEBPACK_IMPORTED_MODULE_14__);\n\n\n\n\n\n\n\n\n\nvar _context, _context2;\nfunction ownKeys(e, r) { var t = _babel_runtime_corejs3_core_js_stable_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(e); if ((_babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default())) { var o = _babel_runtime_corejs3_core_js_stable_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(e); r && (o = _babel_runtime_corejs3_core_js_stable_instance_filter__WEBPACK_IMPORTED_MODULE_2___default()(o).call(o, function (r) { return _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(e, r).enumerable; })), t.push.apply(t, o); } return t; }\nfunction _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var _context4, _context5; var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4___default()(_context4 = ownKeys(Object(t), !0)).call(_context4, function (r) { (0,_babel_runtime_corejs3_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8__[\"default\"])(e, r, t[r]); }) : (_babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5___default()) ? _babel_runtime_corejs3_core_js_stable_object_define_properties__WEBPACK_IMPORTED_MODULE_6___default()(e, _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_5___default()(t)) : _babel_runtime_corejs3_core_js_stable_instance_for_each__WEBPACK_IMPORTED_MODULE_4___default()(_context5 = ownKeys(Object(t))).call(_context5, function (r) { _babel_runtime_corejs3_core_js_stable_object_define_property__WEBPACK_IMPORTED_MODULE_7___default()(e, r, _babel_runtime_corejs3_core_js_stable_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(t, r)); }); } return e; }\n\n\n\n\n\n\n\n\n\nfunction getItem(label, key, icon, children, type) {\n  return {\n    key: key,\n    icon: icon,\n    children: children,\n    label: label,\n    type: type\n  };\n}\nvar items = _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_9___default()(_context = (_public_config__WEBPACK_IMPORTED_MODULE_14___default())[\"development\"].microApps).call(_context, function (item) {\n  return getItem(item.name, item.activeRule, null);\n});\n\n// const MICRO_APPS = eval('<%= JSON.stringify(htmlWebpackPlugin.options.config.microApps) %>')\n// console.log('====================================');\n// console.log(MICRO_APPS);\n// console.log('====================================');\nvar microApps = _babel_runtime_corejs3_core_js_stable_instance_map__WEBPACK_IMPORTED_MODULE_9___default()(_context2 = (_public_config__WEBPACK_IMPORTED_MODULE_14___default())[\"development\"].microApps).call(_context2, function (item) {\n  return _objectSpread(_objectSpread({}, item), {}, {\n    container: '#container' // 类似于一个容器，起到占位的作用\n  });\n});\nconsole.log('====================================');\nconsole.log(microApps);\nconsole.log('====================================');\nfunction FunctionComponent() {\n  // const location = useLocation()\n\n  (0,qiankun__WEBPACK_IMPORTED_MODULE_15__.registerMicroApps)(microApps);\n  (0,react__WEBPACK_IMPORTED_MODULE_11__.useEffect)(qiankun__WEBPACK_IMPORTED_MODULE_15__.start, []);\n  var MenuNavdgate = function MenuNavdgate() {\n    var onClick = function onClick(e) {\n      var _context3;\n      window.location.href = _babel_runtime_corejs3_core_js_stable_instance_concat__WEBPACK_IMPORTED_MODULE_10___default()(_context3 = \"\".concat(window.location.origin)).call(_context3, e.key);\n    };\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(\"nav\", {\n      className: \"nav\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(antd__WEBPACK_IMPORTED_MODULE_16__[\"default\"], {\n      onClick: onClick,\n      style: {\n        width: 200,\n        height: '100%'\n      },\n      defaultSelectedKeys: [window.location.pathname],\n      defaultOpenKeys: [window.location.pathname],\n      mode: \"inline\",\n      items: items\n    }));\n  };\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.BrowserRouter, {\n    basename: \"webpack\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(\"div\", {\n    className: \"box\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(MenuNavdgate, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(\"div\", {\n    style: {\n      flex: 1,\n      padding: '20px'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(\"div\", {\n    id: \"container\"\n  }))));\n}\nvar jsx = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(\"div\", {\n  className: \"border\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_11___default().createElement(FunctionComponent, {\n  name: \"FunctionComponent\"\n}));\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_dom_client__WEBPACK_IMPORTED_MODULE_12__.createRoot)(document.getElementById('root')).render(jsx));\n\n//# sourceURL=webpack://webpack/./src/index.js?");
 
 /***/ }),
 
@@ -4861,61 +4861,6 @@ eval("// TODO(Babel 8): Remove this file.\n\nvar runtime = __webpack_require__(/
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/actual/array/from.js":
-/*!********************************************************!*\
-  !*** ./node_modules/core-js-pure/actual/array/from.js ***!
-  \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../stable/array/from */ \"./node_modules/core-js-pure/stable/array/from.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/actual/array/from.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/actual/array/is-array.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js-pure/actual/array/is-array.js ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../stable/array/is-array */ \"./node_modules/core-js-pure/stable/array/is-array.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/actual/array/is-array.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/actual/get-iterator-method.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js-pure/actual/get-iterator-method.js ***!
-  \*****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../stable/get-iterator-method */ \"./node_modules/core-js-pure/stable/get-iterator-method.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/actual/get-iterator-method.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/actual/instance/push.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/core-js-pure/actual/instance/push.js ***!
-  \***********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../stable/instance/push */ \"./node_modules/core-js-pure/stable/instance/push.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/actual/instance/push.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/actual/instance/slice.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js-pure/actual/instance/slice.js ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../stable/instance/slice */ \"./node_modules/core-js-pure/stable/instance/slice.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/actual/instance/slice.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/actual/object/define-property.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js-pure/actual/object/define-property.js ***!
@@ -4957,28 +4902,6 @@ eval("\nvar parent = __webpack_require__(/*! ../../stable/symbol/iterator */ \".
 
 "use strict";
 eval("\nvar parent = __webpack_require__(/*! ../../stable/symbol/to-primitive */ \"./node_modules/core-js-pure/stable/symbol/to-primitive.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/actual/symbol/to-primitive.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/es/array/from.js":
-/*!****************************************************!*\
-  !*** ./node_modules/core-js-pure/es/array/from.js ***!
-  \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\n__webpack_require__(/*! ../../modules/es.string.iterator */ \"./node_modules/core-js-pure/modules/es.string.iterator.js\");\n__webpack_require__(/*! ../../modules/es.array.from */ \"./node_modules/core-js-pure/modules/es.array.from.js\");\nvar path = __webpack_require__(/*! ../../internals/path */ \"./node_modules/core-js-pure/internals/path.js\");\n\nmodule.exports = path.Array.from;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/array/from.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/es/array/is-array.js":
-/*!********************************************************!*\
-  !*** ./node_modules/core-js-pure/es/array/is-array.js ***!
-  \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\n__webpack_require__(/*! ../../modules/es.array.is-array */ \"./node_modules/core-js-pure/modules/es.array.is-array.js\");\nvar path = __webpack_require__(/*! ../../internals/path */ \"./node_modules/core-js-pure/internals/path.js\");\n\nmodule.exports = path.Array.isArray;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/array/is-array.js?");
 
 /***/ }),
 
@@ -5026,39 +4949,6 @@ eval("\n__webpack_require__(/*! ../../../modules/es.array.map */ \"./node_module
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/es/array/virtual/push.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js-pure/es/array/virtual/push.js ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\n__webpack_require__(/*! ../../../modules/es.array.push */ \"./node_modules/core-js-pure/modules/es.array.push.js\");\nvar getBuiltInPrototypeMethod = __webpack_require__(/*! ../../../internals/get-built-in-prototype-method */ \"./node_modules/core-js-pure/internals/get-built-in-prototype-method.js\");\n\nmodule.exports = getBuiltInPrototypeMethod('Array', 'push');\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/array/virtual/push.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/es/array/virtual/slice.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js-pure/es/array/virtual/slice.js ***!
-  \*************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\n__webpack_require__(/*! ../../../modules/es.array.slice */ \"./node_modules/core-js-pure/modules/es.array.slice.js\");\nvar getBuiltInPrototypeMethod = __webpack_require__(/*! ../../../internals/get-built-in-prototype-method */ \"./node_modules/core-js-pure/internals/get-built-in-prototype-method.js\");\n\nmodule.exports = getBuiltInPrototypeMethod('Array', 'slice');\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/array/virtual/slice.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/es/get-iterator-method.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js-pure/es/get-iterator-method.js ***!
-  \*************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\n__webpack_require__(/*! ../modules/es.array.iterator */ \"./node_modules/core-js-pure/modules/es.array.iterator.js\");\n__webpack_require__(/*! ../modules/es.string.iterator */ \"./node_modules/core-js-pure/modules/es.string.iterator.js\");\nvar getIteratorMethod = __webpack_require__(/*! ../internals/get-iterator-method */ \"./node_modules/core-js-pure/internals/get-iterator-method.js\");\n\nmodule.exports = getIteratorMethod;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/get-iterator-method.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/es/instance/concat.js":
 /*!*********************************************************!*\
   !*** ./node_modules/core-js-pure/es/instance/concat.js ***!
@@ -5089,28 +4979,6 @@ eval("\nvar isPrototypeOf = __webpack_require__(/*! ../../internals/object-is-pr
 
 "use strict";
 eval("\nvar isPrototypeOf = __webpack_require__(/*! ../../internals/object-is-prototype-of */ \"./node_modules/core-js-pure/internals/object-is-prototype-of.js\");\nvar method = __webpack_require__(/*! ../array/virtual/map */ \"./node_modules/core-js-pure/es/array/virtual/map.js\");\n\nvar ArrayPrototype = Array.prototype;\n\nmodule.exports = function (it) {\n  var own = it.map;\n  return it === ArrayPrototype || (isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.map) ? method : own;\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/instance/map.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/es/instance/push.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/core-js-pure/es/instance/push.js ***!
-  \*******************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar isPrototypeOf = __webpack_require__(/*! ../../internals/object-is-prototype-of */ \"./node_modules/core-js-pure/internals/object-is-prototype-of.js\");\nvar method = __webpack_require__(/*! ../array/virtual/push */ \"./node_modules/core-js-pure/es/array/virtual/push.js\");\n\nvar ArrayPrototype = Array.prototype;\n\nmodule.exports = function (it) {\n  var own = it.push;\n  return it === ArrayPrototype || (isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.push) ? method : own;\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/instance/push.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/es/instance/slice.js":
-/*!********************************************************!*\
-  !*** ./node_modules/core-js-pure/es/instance/slice.js ***!
-  \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar isPrototypeOf = __webpack_require__(/*! ../../internals/object-is-prototype-of */ \"./node_modules/core-js-pure/internals/object-is-prototype-of.js\");\nvar method = __webpack_require__(/*! ../array/virtual/slice */ \"./node_modules/core-js-pure/es/array/virtual/slice.js\");\n\nvar ArrayPrototype = Array.prototype;\n\nmodule.exports = function (it) {\n  var own = it.slice;\n  return it === ArrayPrototype || (isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.slice) ? method : own;\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/es/instance/slice.js?");
 
 /***/ }),
 
@@ -5213,61 +5081,6 @@ eval("\n__webpack_require__(/*! ../../modules/es.date.to-primitive */ \"./node_m
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/full/array/from.js":
-/*!******************************************************!*\
-  !*** ./node_modules/core-js-pure/full/array/from.js ***!
-  \******************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../actual/array/from */ \"./node_modules/core-js-pure/actual/array/from.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/full/array/from.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/full/array/is-array.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js-pure/full/array/is-array.js ***!
-  \**********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../actual/array/is-array */ \"./node_modules/core-js-pure/actual/array/is-array.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/full/array/is-array.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/full/get-iterator-method.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/core-js-pure/full/get-iterator-method.js ***!
-  \***************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../actual/get-iterator-method */ \"./node_modules/core-js-pure/actual/get-iterator-method.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/full/get-iterator-method.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/full/instance/push.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/core-js-pure/full/instance/push.js ***!
-  \*********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../actual/instance/push */ \"./node_modules/core-js-pure/actual/instance/push.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/full/instance/push.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/full/instance/slice.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js-pure/full/instance/slice.js ***!
-  \**********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../actual/instance/slice */ \"./node_modules/core-js-pure/actual/instance/slice.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/full/instance/slice.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/full/object/define-property.js":
 /*!******************************************************************!*\
   !*** ./node_modules/core-js-pure/full/object/define-property.js ***!
@@ -5367,17 +5180,6 @@ eval("\nvar $forEach = (__webpack_require__(/*! ../internals/array-iteration */ 
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/internals/array-from.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/array-from.js ***!
-  \***********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar bind = __webpack_require__(/*! ../internals/function-bind-context */ \"./node_modules/core-js-pure/internals/function-bind-context.js\");\nvar call = __webpack_require__(/*! ../internals/function-call */ \"./node_modules/core-js-pure/internals/function-call.js\");\nvar toObject = __webpack_require__(/*! ../internals/to-object */ \"./node_modules/core-js-pure/internals/to-object.js\");\nvar callWithSafeIterationClosing = __webpack_require__(/*! ../internals/call-with-safe-iteration-closing */ \"./node_modules/core-js-pure/internals/call-with-safe-iteration-closing.js\");\nvar isArrayIteratorMethod = __webpack_require__(/*! ../internals/is-array-iterator-method */ \"./node_modules/core-js-pure/internals/is-array-iterator-method.js\");\nvar isConstructor = __webpack_require__(/*! ../internals/is-constructor */ \"./node_modules/core-js-pure/internals/is-constructor.js\");\nvar lengthOfArrayLike = __webpack_require__(/*! ../internals/length-of-array-like */ \"./node_modules/core-js-pure/internals/length-of-array-like.js\");\nvar createProperty = __webpack_require__(/*! ../internals/create-property */ \"./node_modules/core-js-pure/internals/create-property.js\");\nvar getIterator = __webpack_require__(/*! ../internals/get-iterator */ \"./node_modules/core-js-pure/internals/get-iterator.js\");\nvar getIteratorMethod = __webpack_require__(/*! ../internals/get-iterator-method */ \"./node_modules/core-js-pure/internals/get-iterator-method.js\");\n\nvar $Array = Array;\n\n// `Array.from` method implementation\n// https://tc39.es/ecma262/#sec-array.from\nmodule.exports = function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {\n  var O = toObject(arrayLike);\n  var IS_CONSTRUCTOR = isConstructor(this);\n  var argumentsLength = arguments.length;\n  var mapfn = argumentsLength > 1 ? arguments[1] : undefined;\n  var mapping = mapfn !== undefined;\n  if (mapping) mapfn = bind(mapfn, argumentsLength > 2 ? arguments[2] : undefined);\n  var iteratorMethod = getIteratorMethod(O);\n  var index = 0;\n  var length, result, step, iterator, next, value;\n  // if the target is not iterable or it's an array with the default iterator - use a simple case\n  if (iteratorMethod && !(this === $Array && isArrayIteratorMethod(iteratorMethod))) {\n    iterator = getIterator(O, iteratorMethod);\n    next = iterator.next;\n    result = IS_CONSTRUCTOR ? new this() : [];\n    for (;!(step = call(next, iterator)).done; index++) {\n      value = mapping ? callWithSafeIterationClosing(iterator, mapfn, [step.value, index], true) : step.value;\n      createProperty(result, index, value);\n    }\n  } else {\n    length = lengthOfArrayLike(O);\n    result = IS_CONSTRUCTOR ? new this(length) : $Array(length);\n    for (;length > index; index++) {\n      value = mapping ? mapfn(O[index], index) : O[index];\n      createProperty(result, index, value);\n    }\n  }\n  result.length = index;\n  return result;\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/array-from.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/internals/array-includes.js":
 /*!***************************************************************!*\
   !*** ./node_modules/core-js-pure/internals/array-includes.js ***!
@@ -5422,17 +5224,6 @@ eval("\nvar fails = __webpack_require__(/*! ../internals/fails */ \"./node_modul
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/internals/array-set-length.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/array-set-length.js ***!
-  \*****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ \"./node_modules/core-js-pure/internals/descriptors.js\");\nvar isArray = __webpack_require__(/*! ../internals/is-array */ \"./node_modules/core-js-pure/internals/is-array.js\");\n\nvar $TypeError = TypeError;\n// eslint-disable-next-line es/no-object-getownpropertydescriptor -- safe\nvar getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;\n\n// Safari < 13 does not throw an error in this case\nvar SILENT_ON_NON_WRITABLE_LENGTH_SET = DESCRIPTORS && !function () {\n  // makes no sense without proper strict mode support\n  if (this !== undefined) return true;\n  try {\n    // eslint-disable-next-line es/no-object-defineproperty -- safe\n    Object.defineProperty([], 'length', { writable: false }).length = 1;\n  } catch (error) {\n    return error instanceof TypeError;\n  }\n}();\n\nmodule.exports = SILENT_ON_NON_WRITABLE_LENGTH_SET ? function (O, length) {\n  if (isArray(O) && !getOwnPropertyDescriptor(O, 'length').writable) {\n    throw new $TypeError('Cannot set read only .length');\n  } return O.length = length;\n} : function (O, length) {\n  return O.length = length;\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/array-set-length.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/internals/array-slice-simple.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js-pure/internals/array-slice-simple.js ***!
@@ -5474,28 +5265,6 @@ eval("\nvar isArray = __webpack_require__(/*! ../internals/is-array */ \"./node_
 
 "use strict";
 eval("\nvar arraySpeciesConstructor = __webpack_require__(/*! ../internals/array-species-constructor */ \"./node_modules/core-js-pure/internals/array-species-constructor.js\");\n\n// `ArraySpeciesCreate` abstract operation\n// https://tc39.es/ecma262/#sec-arrayspeciescreate\nmodule.exports = function (originalArray, length) {\n  return new (arraySpeciesConstructor(originalArray))(length === 0 ? 0 : length);\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/array-species-create.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/internals/call-with-safe-iteration-closing.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/call-with-safe-iteration-closing.js ***!
-  \*********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar anObject = __webpack_require__(/*! ../internals/an-object */ \"./node_modules/core-js-pure/internals/an-object.js\");\nvar iteratorClose = __webpack_require__(/*! ../internals/iterator-close */ \"./node_modules/core-js-pure/internals/iterator-close.js\");\n\n// call something on iterator step with safe closing on error\nmodule.exports = function (iterator, fn, value, ENTRIES) {\n  try {\n    return ENTRIES ? fn(anObject(value)[0], value[1]) : fn(value);\n  } catch (error) {\n    iteratorClose(iterator, 'throw', error);\n  }\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/call-with-safe-iteration-closing.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/internals/check-correctness-of-iteration.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/check-correctness-of-iteration.js ***!
-  \*******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ \"./node_modules/core-js-pure/internals/well-known-symbol.js\");\n\nvar ITERATOR = wellKnownSymbol('iterator');\nvar SAFE_CLOSING = false;\n\ntry {\n  var called = 0;\n  var iteratorWithReturn = {\n    next: function () {\n      return { done: !!called++ };\n    },\n    'return': function () {\n      SAFE_CLOSING = true;\n    }\n  };\n  iteratorWithReturn[ITERATOR] = function () {\n    return this;\n  };\n  // eslint-disable-next-line es/no-array-from, no-throw-literal -- required for testing\n  Array.from(iteratorWithReturn, function () { throw 2; });\n} catch (error) { /* empty */ }\n\nmodule.exports = function (exec, SKIP_CLOSING) {\n  try {\n    if (!SKIP_CLOSING && !SAFE_CLOSING) return false;\n  } catch (error) { return false; } // workaround of old WebKit + `eval` bug\n  var ITERATION_SUPPORT = false;\n  try {\n    var object = {};\n    object[ITERATOR] = function () {\n      return {\n        next: function () {\n          return { done: ITERATION_SUPPORT = true };\n        }\n      };\n    };\n    exec(object);\n  } catch (error) { /* empty */ }\n  return ITERATION_SUPPORT;\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/check-correctness-of-iteration.js?");
 
 /***/ }),
 
@@ -5829,28 +5598,6 @@ eval("\nvar path = __webpack_require__(/*! ../internals/path */ \"./node_modules
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/internals/get-iterator-method.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/get-iterator-method.js ***!
-  \********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar classof = __webpack_require__(/*! ../internals/classof */ \"./node_modules/core-js-pure/internals/classof.js\");\nvar getMethod = __webpack_require__(/*! ../internals/get-method */ \"./node_modules/core-js-pure/internals/get-method.js\");\nvar isNullOrUndefined = __webpack_require__(/*! ../internals/is-null-or-undefined */ \"./node_modules/core-js-pure/internals/is-null-or-undefined.js\");\nvar Iterators = __webpack_require__(/*! ../internals/iterators */ \"./node_modules/core-js-pure/internals/iterators.js\");\nvar wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ \"./node_modules/core-js-pure/internals/well-known-symbol.js\");\n\nvar ITERATOR = wellKnownSymbol('iterator');\n\nmodule.exports = function (it) {\n  if (!isNullOrUndefined(it)) return getMethod(it, ITERATOR)\n    || getMethod(it, '@@iterator')\n    || Iterators[classof(it)];\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/get-iterator-method.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/internals/get-iterator.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/get-iterator.js ***!
-  \*************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar call = __webpack_require__(/*! ../internals/function-call */ \"./node_modules/core-js-pure/internals/function-call.js\");\nvar aCallable = __webpack_require__(/*! ../internals/a-callable */ \"./node_modules/core-js-pure/internals/a-callable.js\");\nvar anObject = __webpack_require__(/*! ../internals/an-object */ \"./node_modules/core-js-pure/internals/an-object.js\");\nvar tryToString = __webpack_require__(/*! ../internals/try-to-string */ \"./node_modules/core-js-pure/internals/try-to-string.js\");\nvar getIteratorMethod = __webpack_require__(/*! ../internals/get-iterator-method */ \"./node_modules/core-js-pure/internals/get-iterator-method.js\");\n\nvar $TypeError = TypeError;\n\nmodule.exports = function (argument, usingIterator) {\n  var iteratorMethod = arguments.length < 2 ? getIteratorMethod(argument) : usingIterator;\n  if (aCallable(iteratorMethod)) return anObject(call(iteratorMethod, argument));\n  throw new $TypeError(tryToString(argument) + ' is not iterable');\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/get-iterator.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/internals/get-json-replacer-function.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/core-js-pure/internals/get-json-replacer-function.js ***!
@@ -5961,17 +5708,6 @@ eval("\nvar NATIVE_WEAK_MAP = __webpack_require__(/*! ../internals/weak-map-basi
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/internals/is-array-iterator-method.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/is-array-iterator-method.js ***!
-  \*************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ \"./node_modules/core-js-pure/internals/well-known-symbol.js\");\nvar Iterators = __webpack_require__(/*! ../internals/iterators */ \"./node_modules/core-js-pure/internals/iterators.js\");\n\nvar ITERATOR = wellKnownSymbol('iterator');\nvar ArrayPrototype = Array.prototype;\n\n// check on default Array iterator\nmodule.exports = function (it) {\n  return it !== undefined && (Iterators.Array === it || ArrayPrototype[ITERATOR] === it);\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/is-array-iterator-method.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/internals/is-array.js":
 /*!*********************************************************!*\
   !*** ./node_modules/core-js-pure/internals/is-array.js ***!
@@ -6057,17 +5793,6 @@ eval("\nmodule.exports = true;\n\n\n//# sourceURL=webpack://webpack/./node_modul
 
 "use strict";
 eval("\nvar getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ \"./node_modules/core-js-pure/internals/get-built-in.js\");\nvar isCallable = __webpack_require__(/*! ../internals/is-callable */ \"./node_modules/core-js-pure/internals/is-callable.js\");\nvar isPrototypeOf = __webpack_require__(/*! ../internals/object-is-prototype-of */ \"./node_modules/core-js-pure/internals/object-is-prototype-of.js\");\nvar USE_SYMBOL_AS_UID = __webpack_require__(/*! ../internals/use-symbol-as-uid */ \"./node_modules/core-js-pure/internals/use-symbol-as-uid.js\");\n\nvar $Object = Object;\n\nmodule.exports = USE_SYMBOL_AS_UID ? function (it) {\n  return typeof it == 'symbol';\n} : function (it) {\n  var $Symbol = getBuiltIn('Symbol');\n  return isCallable($Symbol) && isPrototypeOf($Symbol.prototype, $Object(it));\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/is-symbol.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/internals/iterator-close.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/core-js-pure/internals/iterator-close.js ***!
-  \***************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar call = __webpack_require__(/*! ../internals/function-call */ \"./node_modules/core-js-pure/internals/function-call.js\");\nvar anObject = __webpack_require__(/*! ../internals/an-object */ \"./node_modules/core-js-pure/internals/an-object.js\");\nvar getMethod = __webpack_require__(/*! ../internals/get-method */ \"./node_modules/core-js-pure/internals/get-method.js\");\n\nmodule.exports = function (iterator, kind, value) {\n  var innerResult, innerError;\n  anObject(iterator);\n  try {\n    innerResult = getMethod(iterator, 'return');\n    if (!innerResult) {\n      if (kind === 'throw') throw value;\n      return value;\n    }\n    innerResult = call(innerResult, iterator);\n  } catch (error) {\n    innerError = true;\n    innerResult = error;\n  }\n  if (kind === 'throw') throw value;\n  if (innerError) throw innerResult;\n  anObject(innerResult);\n  return value;\n};\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/internals/iterator-close.js?");
 
 /***/ }),
 
@@ -6665,28 +6390,6 @@ eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"./node_modules/
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/modules/es.array.from.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js-pure/modules/es.array.from.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"./node_modules/core-js-pure/internals/export.js\");\nvar from = __webpack_require__(/*! ../internals/array-from */ \"./node_modules/core-js-pure/internals/array-from.js\");\nvar checkCorrectnessOfIteration = __webpack_require__(/*! ../internals/check-correctness-of-iteration */ \"./node_modules/core-js-pure/internals/check-correctness-of-iteration.js\");\n\nvar INCORRECT_ITERATION = !checkCorrectnessOfIteration(function (iterable) {\n  // eslint-disable-next-line es/no-array-from -- required for testing\n  Array.from(iterable);\n});\n\n// `Array.from` method\n// https://tc39.es/ecma262/#sec-array.from\n$({ target: 'Array', stat: true, forced: INCORRECT_ITERATION }, {\n  from: from\n});\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/modules/es.array.from.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/modules/es.array.is-array.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/core-js-pure/modules/es.array.is-array.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"./node_modules/core-js-pure/internals/export.js\");\nvar isArray = __webpack_require__(/*! ../internals/is-array */ \"./node_modules/core-js-pure/internals/is-array.js\");\n\n// `Array.isArray` method\n// https://tc39.es/ecma262/#sec-array.isarray\n$({ target: 'Array', stat: true }, {\n  isArray: isArray\n});\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/modules/es.array.is-array.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/modules/es.array.iterator.js":
 /*!****************************************************************!*\
   !*** ./node_modules/core-js-pure/modules/es.array.iterator.js ***!
@@ -6706,28 +6409,6 @@ eval("\nvar toIndexedObject = __webpack_require__(/*! ../internals/to-indexed-ob
 
 "use strict";
 eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"./node_modules/core-js-pure/internals/export.js\");\nvar $map = (__webpack_require__(/*! ../internals/array-iteration */ \"./node_modules/core-js-pure/internals/array-iteration.js\").map);\nvar arrayMethodHasSpeciesSupport = __webpack_require__(/*! ../internals/array-method-has-species-support */ \"./node_modules/core-js-pure/internals/array-method-has-species-support.js\");\n\nvar HAS_SPECIES_SUPPORT = arrayMethodHasSpeciesSupport('map');\n\n// `Array.prototype.map` method\n// https://tc39.es/ecma262/#sec-array.prototype.map\n// with adding support of @@species\n$({ target: 'Array', proto: true, forced: !HAS_SPECIES_SUPPORT }, {\n  map: function map(callbackfn /* , thisArg */) {\n    return $map(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);\n  }\n});\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/modules/es.array.map.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/modules/es.array.push.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js-pure/modules/es.array.push.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"./node_modules/core-js-pure/internals/export.js\");\nvar toObject = __webpack_require__(/*! ../internals/to-object */ \"./node_modules/core-js-pure/internals/to-object.js\");\nvar lengthOfArrayLike = __webpack_require__(/*! ../internals/length-of-array-like */ \"./node_modules/core-js-pure/internals/length-of-array-like.js\");\nvar setArrayLength = __webpack_require__(/*! ../internals/array-set-length */ \"./node_modules/core-js-pure/internals/array-set-length.js\");\nvar doesNotExceedSafeInteger = __webpack_require__(/*! ../internals/does-not-exceed-safe-integer */ \"./node_modules/core-js-pure/internals/does-not-exceed-safe-integer.js\");\nvar fails = __webpack_require__(/*! ../internals/fails */ \"./node_modules/core-js-pure/internals/fails.js\");\n\nvar INCORRECT_TO_LENGTH = fails(function () {\n  return [].push.call({ length: 0x100000000 }, 1) !== 4294967297;\n});\n\n// V8 and Safari <= 15.4, FF < 23 throws InternalError\n// https://bugs.chromium.org/p/v8/issues/detail?id=12681\nvar properErrorOnNonWritableLength = function () {\n  try {\n    // eslint-disable-next-line es/no-object-defineproperty -- safe\n    Object.defineProperty([], 'length', { writable: false }).push();\n  } catch (error) {\n    return error instanceof TypeError;\n  }\n};\n\nvar FORCED = INCORRECT_TO_LENGTH || !properErrorOnNonWritableLength();\n\n// `Array.prototype.push` method\n// https://tc39.es/ecma262/#sec-array.prototype.push\n$({ target: 'Array', proto: true, arity: 1, forced: FORCED }, {\n  // eslint-disable-next-line no-unused-vars -- required for `.length`\n  push: function push(item) {\n    var O = toObject(this);\n    var len = lengthOfArrayLike(O);\n    var argCount = arguments.length;\n    doesNotExceedSafeInteger(len + argCount);\n    for (var i = 0; i < argCount; i++) {\n      O[len] = arguments[i];\n      len++;\n    }\n    setArrayLength(O, len);\n    return len;\n  }\n});\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/modules/es.array.push.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/modules/es.array.slice.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js-pure/modules/es.array.slice.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"./node_modules/core-js-pure/internals/export.js\");\nvar isArray = __webpack_require__(/*! ../internals/is-array */ \"./node_modules/core-js-pure/internals/is-array.js\");\nvar isConstructor = __webpack_require__(/*! ../internals/is-constructor */ \"./node_modules/core-js-pure/internals/is-constructor.js\");\nvar isObject = __webpack_require__(/*! ../internals/is-object */ \"./node_modules/core-js-pure/internals/is-object.js\");\nvar toAbsoluteIndex = __webpack_require__(/*! ../internals/to-absolute-index */ \"./node_modules/core-js-pure/internals/to-absolute-index.js\");\nvar lengthOfArrayLike = __webpack_require__(/*! ../internals/length-of-array-like */ \"./node_modules/core-js-pure/internals/length-of-array-like.js\");\nvar toIndexedObject = __webpack_require__(/*! ../internals/to-indexed-object */ \"./node_modules/core-js-pure/internals/to-indexed-object.js\");\nvar createProperty = __webpack_require__(/*! ../internals/create-property */ \"./node_modules/core-js-pure/internals/create-property.js\");\nvar wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ \"./node_modules/core-js-pure/internals/well-known-symbol.js\");\nvar arrayMethodHasSpeciesSupport = __webpack_require__(/*! ../internals/array-method-has-species-support */ \"./node_modules/core-js-pure/internals/array-method-has-species-support.js\");\nvar nativeSlice = __webpack_require__(/*! ../internals/array-slice */ \"./node_modules/core-js-pure/internals/array-slice.js\");\n\nvar HAS_SPECIES_SUPPORT = arrayMethodHasSpeciesSupport('slice');\n\nvar SPECIES = wellKnownSymbol('species');\nvar $Array = Array;\nvar max = Math.max;\n\n// `Array.prototype.slice` method\n// https://tc39.es/ecma262/#sec-array.prototype.slice\n// fallback for not array-like ES3 strings and DOM objects\n$({ target: 'Array', proto: true, forced: !HAS_SPECIES_SUPPORT }, {\n  slice: function slice(start, end) {\n    var O = toIndexedObject(this);\n    var length = lengthOfArrayLike(O);\n    var k = toAbsoluteIndex(start, length);\n    var fin = toAbsoluteIndex(end === undefined ? length : end, length);\n    // inline `ArraySpeciesCreate` for usage native `Array#slice` where it's possible\n    var Constructor, result, n;\n    if (isArray(O)) {\n      Constructor = O.constructor;\n      // cross-realm fallback\n      if (isConstructor(Constructor) && (Constructor === $Array || isArray(Constructor.prototype))) {\n        Constructor = undefined;\n      } else if (isObject(Constructor)) {\n        Constructor = Constructor[SPECIES];\n        if (Constructor === null) Constructor = undefined;\n      }\n      if (Constructor === $Array || Constructor === undefined) {\n        return nativeSlice(O, k, fin);\n      }\n    }\n    result = new (Constructor === undefined ? $Array : Constructor)(max(fin - k, 0));\n    for (n = 0; k < fin; k++, n++) if (k in O) createProperty(result, n, O[k]);\n    result.length = n;\n    return result;\n  }\n});\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/modules/es.array.slice.js?");
 
 /***/ }),
 
@@ -7231,28 +6912,6 @@ eval("\n__webpack_require__(/*! ../modules/es.array.iterator */ \"./node_modules
 
 /***/ }),
 
-/***/ "./node_modules/core-js-pure/stable/array/from.js":
-/*!********************************************************!*\
-  !*** ./node_modules/core-js-pure/stable/array/from.js ***!
-  \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../es/array/from */ \"./node_modules/core-js-pure/es/array/from.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/stable/array/from.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/stable/array/is-array.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js-pure/stable/array/is-array.js ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../es/array/is-array */ \"./node_modules/core-js-pure/es/array/is-array.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/stable/array/is-array.js?");
-
-/***/ }),
-
 /***/ "./node_modules/core-js-pure/stable/array/virtual/for-each.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js-pure/stable/array/virtual/for-each.js ***!
@@ -7261,17 +6920,6 @@ eval("\nvar parent = __webpack_require__(/*! ../../es/array/is-array */ \"./node
 
 "use strict";
 eval("\nvar parent = __webpack_require__(/*! ../../../es/array/virtual/for-each */ \"./node_modules/core-js-pure/es/array/virtual/for-each.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/stable/array/virtual/for-each.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/stable/get-iterator-method.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js-pure/stable/get-iterator-method.js ***!
-  \*****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../es/get-iterator-method */ \"./node_modules/core-js-pure/es/get-iterator-method.js\");\n__webpack_require__(/*! ../modules/web.dom-collections.iterator */ \"./node_modules/core-js-pure/modules/web.dom-collections.iterator.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/stable/get-iterator-method.js?");
 
 /***/ }),
 
@@ -7316,28 +6964,6 @@ eval("\nvar classof = __webpack_require__(/*! ../../internals/classof */ \"./nod
 
 "use strict";
 eval("\nvar parent = __webpack_require__(/*! ../../es/instance/map */ \"./node_modules/core-js-pure/es/instance/map.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/stable/instance/map.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/stable/instance/push.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/core-js-pure/stable/instance/push.js ***!
-  \***********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../es/instance/push */ \"./node_modules/core-js-pure/es/instance/push.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/stable/instance/push.js?");
-
-/***/ }),
-
-/***/ "./node_modules/core-js-pure/stable/instance/slice.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js-pure/stable/instance/slice.js ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\nvar parent = __webpack_require__(/*! ../../es/instance/slice */ \"./node_modules/core-js-pure/es/instance/slice.js\");\n\nmodule.exports = parent;\n\n\n//# sourceURL=webpack://webpack/./node_modules/core-js-pure/stable/instance/slice.js?");
 
 /***/ }),
 
@@ -7440,28 +7066,6 @@ eval("\nvar parent = __webpack_require__(/*! ../../es/symbol/to-primitive */ \".
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs3/helpers/esm/arrayLikeToArray.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs3/helpers/esm/arrayLikeToArray.js ***!
-  \*****************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _arrayLikeToArray)\n/* harmony export */ });\nfunction _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.length) len = arr.length;\n  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];\n  return arr2;\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/arrayLikeToArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs3/helpers/esm/arrayWithHoles.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs3/helpers/esm/arrayWithHoles.js ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _arrayWithHoles)\n/* harmony export */ });\n/* harmony import */ var core_js_pure_features_array_is_array_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js-pure/features/array/is-array.js */ \"./node_modules/core-js-pure/full/array/is-array.js\");\n\nfunction _arrayWithHoles(arr) {\n  if (core_js_pure_features_array_is_array_js__WEBPACK_IMPORTED_MODULE_0__(arr)) return arr;\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/arrayWithHoles.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs3/helpers/esm/defineProperty.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs3/helpers/esm/defineProperty.js ***!
@@ -7470,39 +7074,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _defineProperty)\n/* harmony export */ });\n/* harmony import */ var core_js_pure_features_object_define_property_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js-pure/features/object/define-property.js */ \"./node_modules/core-js-pure/full/object/define-property.js\");\n/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toPropertyKey.js */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/toPropertyKey.js\");\n\n\nfunction _defineProperty(obj, key, value) {\n  key = (0,_toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(key);\n  if (key in obj) {\n    core_js_pure_features_object_define_property_js__WEBPACK_IMPORTED_MODULE_1__(obj, key, {\n      value: value,\n      enumerable: true,\n      configurable: true,\n      writable: true\n    });\n  } else {\n    obj[key] = value;\n  }\n  return obj;\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/defineProperty.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs3/helpers/esm/iterableToArrayLimit.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs3/helpers/esm/iterableToArrayLimit.js ***!
-  \*********************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _iterableToArrayLimit)\n/* harmony export */ });\n/* harmony import */ var core_js_pure_features_symbol_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js-pure/features/symbol/index.js */ \"./node_modules/core-js-pure/full/symbol/index.js\");\n/* harmony import */ var core_js_pure_features_get_iterator_method_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js-pure/features/get-iterator-method.js */ \"./node_modules/core-js-pure/full/get-iterator-method.js\");\n/* harmony import */ var core_js_pure_features_instance_push_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js-pure/features/instance/push.js */ \"./node_modules/core-js-pure/full/instance/push.js\");\n\n\n\nfunction _iterableToArrayLimit(r, l) {\n  var t = null == r ? null : \"undefined\" != typeof core_js_pure_features_symbol_index_js__WEBPACK_IMPORTED_MODULE_0__ && core_js_pure_features_get_iterator_method_js__WEBPACK_IMPORTED_MODULE_1__(r) || r[\"@@iterator\"];\n  if (null != t) {\n    var e,\n      n,\n      i,\n      u,\n      a = [],\n      f = !0,\n      o = !1;\n    try {\n      if (i = (t = t.call(r)).next, 0 === l) {\n        if (Object(t) !== t) return;\n        f = !1;\n      } else for (; !(f = (e = i.call(t)).done) && (core_js_pure_features_instance_push_js__WEBPACK_IMPORTED_MODULE_2__(a).call(a, e.value), a.length !== l); f = !0);\n    } catch (r) {\n      o = !0, n = r;\n    } finally {\n      try {\n        if (!f && null != t[\"return\"] && (u = t[\"return\"](), Object(u) !== u)) return;\n      } finally {\n        if (o) throw n;\n      }\n    }\n    return a;\n  }\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/iterableToArrayLimit.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs3/helpers/esm/nonIterableRest.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs3/helpers/esm/nonIterableRest.js ***!
-  \****************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _nonIterableRest)\n/* harmony export */ });\nfunction _nonIterableRest() {\n  throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/nonIterableRest.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs3/helpers/esm/slicedToArray.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs3/helpers/esm/slicedToArray.js ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _slicedToArray)\n/* harmony export */ });\n/* harmony import */ var _arrayWithHoles_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles.js */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/arrayWithHoles.js\");\n/* harmony import */ var _iterableToArrayLimit_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit.js */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/iterableToArrayLimit.js\");\n/* harmony import */ var _unsupportedIterableToArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./unsupportedIterableToArray.js */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/unsupportedIterableToArray.js\");\n/* harmony import */ var _nonIterableRest_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nonIterableRest.js */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/nonIterableRest.js\");\n\n\n\n\nfunction _slicedToArray(arr, i) {\n  return (0,_arrayWithHoles_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(arr) || (0,_iterableToArrayLimit_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(arr, i) || (0,_unsupportedIterableToArray_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(arr, i) || (0,_nonIterableRest_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/slicedToArray.js?");
 
 /***/ }),
 
@@ -7536,17 +7107,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _typeof)\n/* harmony export */ });\n/* harmony import */ var core_js_pure_features_symbol_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js-pure/features/symbol/index.js */ \"./node_modules/core-js-pure/full/symbol/index.js\");\n/* harmony import */ var core_js_pure_features_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js-pure/features/symbol/iterator.js */ \"./node_modules/core-js-pure/full/symbol/iterator.js\");\n\n\nfunction _typeof(o) {\n  \"@babel/helpers - typeof\";\n\n  return _typeof = \"function\" == typeof core_js_pure_features_symbol_index_js__WEBPACK_IMPORTED_MODULE_0__ && \"symbol\" == typeof core_js_pure_features_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_1__ ? function (o) {\n    return typeof o;\n  } : function (o) {\n    return o && \"function\" == typeof core_js_pure_features_symbol_index_js__WEBPACK_IMPORTED_MODULE_0__ && o.constructor === core_js_pure_features_symbol_index_js__WEBPACK_IMPORTED_MODULE_0__ && o !== core_js_pure_features_symbol_index_js__WEBPACK_IMPORTED_MODULE_0__.prototype ? \"symbol\" : typeof o;\n  }, _typeof(o);\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/typeof.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs3/helpers/esm/unsupportedIterableToArray.js":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs3/helpers/esm/unsupportedIterableToArray.js ***!
-  \***************************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _unsupportedIterableToArray)\n/* harmony export */ });\n/* harmony import */ var core_js_pure_features_instance_slice_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js-pure/features/instance/slice.js */ \"./node_modules/core-js-pure/full/instance/slice.js\");\n/* harmony import */ var core_js_pure_features_array_from_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js-pure/features/array/from.js */ \"./node_modules/core-js-pure/full/array/from.js\");\n/* harmony import */ var _arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayLikeToArray.js */ \"./node_modules/@babel/runtime-corejs3/helpers/esm/arrayLikeToArray.js\");\n\n\n\nfunction _unsupportedIterableToArray(o, minLen) {\n  var _context;\n  if (!o) return;\n  if (typeof o === \"string\") return (0,_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(o, minLen);\n  var n = core_js_pure_features_instance_slice_js__WEBPACK_IMPORTED_MODULE_1__(_context = Object.prototype.toString.call(o)).call(_context, 8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return core_js_pure_features_array_from_js__WEBPACK_IMPORTED_MODULE_2__(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return (0,_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(o, minLen);\n}\n\n//# sourceURL=webpack://webpack/./node_modules/@babel/runtime-corejs3/helpers/esm/unsupportedIterableToArray.js?");
 
 /***/ }),
 

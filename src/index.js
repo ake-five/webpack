@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { createRoot } from 'react-dom/client';
 import { registerMicroApps, start } from 'qiankun';
 import "./styles/index.less";
-import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Menu } from 'antd';
 
 import config from '../public/config'
@@ -19,7 +19,10 @@ const items = config[process.env.NODE_ENV].microApps.map(item => {
   return getItem(item.name, item.activeRule, null)
 })
 
-
+// const MICRO_APPS = eval('<%= JSON.stringify(htmlWebpackPlugin.options.config.microApps) %>')
+// console.log('====================================');
+// console.log(MICRO_APPS);
+// console.log('====================================');
 const microApps = config[process.env.NODE_ENV].microApps.map(item => {
   return {
     ...item,
@@ -31,13 +34,10 @@ console.log(microApps);
 console.log('====================================');
 function FunctionComponent() {
   // const location = useLocation()
-  const [activeNav, setActiveAnv] = useState(window.location.pathname)
 
   registerMicroApps(microApps);
-  useEffect(() => {
-    start()
-    setActiveAnv(window.location.pathname)
-  }, [])
+  useEffect(start, [])
+  
   const MenuNavdgate = () => {
     const onClick = (e) => {
       window.location.href = `${window.location.origin}${e.key}`
@@ -50,8 +50,8 @@ function FunctionComponent() {
             width: 200,
             height: '100%'
           }}
-          defaultSelectedKeys={[activeNav]}
-          defaultOpenKeys={[activeNav]}
+          defaultSelectedKeys={[window.location.pathname]}
+          defaultOpenKeys={[window.location.pathname]}
           mode="inline"
           items={items}
         />
