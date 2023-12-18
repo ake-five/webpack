@@ -2,6 +2,7 @@
 module.exports = {
     defaultMicroApp:'/webpack/reactdome1',
     development: {
+        publicPath:'/',
         template: {
             title: '主应用-dev',
             header: false,
@@ -10,12 +11,13 @@ module.exports = {
         microApps: [
             {
                 name: '微应用dome1', // app已经注册的名字
-                entry: '//ake-five.github.io/react-manage',  // 进入的主机端口号
+                entry: '//localhost:3001',  // 进入的主机端口号
                 activeRule: '/webpack/reactdome1',  // 找到微应用的路径
             },
         ]
     },
     production: {
+        publicPath:undefined,
         template: {
             title: '应用集成平台',
             header: true,

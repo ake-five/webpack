@@ -3,8 +3,9 @@ import { createRoot } from 'react-dom/client';
 import { registerMicroApps, start } from 'qiankun';
 import "./styles/index.less";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Menu } from 'antd';
+import {  Layout, Menu, theme } from 'antd';
 
+const { Header, Content, Sider } = Layout;
 import config from '../public/config'
 function getItem(label, key, icon, children, type) {
   return {
@@ -19,19 +20,13 @@ const items = config[process.env.NODE_ENV].microApps.map(item => {
   return getItem(item.name, item.activeRule, null)
 })
 
-// const MICRO_APPS = eval('<%= JSON.stringify(htmlWebpackPlugin.options.config.microApps) %>')
-// console.log('====================================');
-// console.log(MICRO_APPS);
-// console.log('====================================');
 const microApps = config[process.env.NODE_ENV].microApps.map(item => {
   return {
     ...item,
     container: '#container',  // 类似于一个容器，起到占位的作用
   }
 })
-console.log('====================================');
-console.log(microApps);
-console.log('====================================');
+
 function FunctionComponent() {
   // const location = useLocation()
 
@@ -52,23 +47,50 @@ function FunctionComponent() {
           }}
           defaultSelectedKeys={[window.location.pathname]}
           defaultOpenKeys={[window.location.pathname]}
-          mode="inline"
+          theme="dark"
+          mode="horizontal"
           items={items}
         />
       </nav>
     );
   };
+  const {
+    token: { colorBgContainer, borderRadiusLG },
+  } = theme.useToken();
   return (
     <Router basename="webpack">
-      <div className="box">
+       <Layout  style={{
+            height: '100%',
+          }}>
         {/* 左边菜单 */}
+        <Header
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
         <MenuNavdgate />
+        </Header>
         {/* 右边路由内容 */}
-        <div style={{ flex: 1, padding: '20px' }}>
+        <Layout
+          style={{
+            height: '100%',
+          }}
+        >
+          {/* <div id='container' /> */}
+          <Content
+            style={{
+              margin: 0,
+              minHeight: 280,
+              background: colorBgContainer,
+              borderRadius: borderRadiusLG,
+            }}
+          >
+           <div id='container' style={{height:'100%'}}/>
+          </Content>
+          </Layout>
+          </Layout>
 
-          <div id='container' />
-        </div>
-      </div>
     </Router>
   );
 }
