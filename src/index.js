@@ -26,12 +26,30 @@ const microApps = config[process.env.NODE_ENV].microApps.map(item => {
     container: '#container',  // 类似于一个容器，起到占位的作用
   }
 })
-
+function getCookie(name) {
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].split("=");
+      if (cookie[0] === name) {
+          return cookie[1];
+      }
+  }
+  return null;
+}
 function FunctionComponent() {
   // const location = useLocation()
 
   registerMicroApps(microApps);
-  useEffect(start, [])
+  useEffect(()=>{
+    start()
+  
+    if(!getCookie('ther')){
+      const envLoginDomainDev = '//ake-five.github.io' 
+      const returnURl = window.location.href
+      // window.location.href =`${envLoginDomainDev}?returnUrl=${returnURl}&domain=localhost`//线上调试登陆地址
+      window.location.href =`${envLoginDomainDev}/login-vite-vue/?returnUrl=${returnURl}&domain=localhost`//本地调试登陆地址
+    }
+  }, [])
   
   const MenuNavdgate = () => {
     const onClick = (e) => {
