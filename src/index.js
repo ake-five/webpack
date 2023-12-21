@@ -47,7 +47,7 @@ function FunctionComponent() {
       const envLoginDomainDev = '//ake-five.github.io' 
       const returnURl = window.location.href
       // window.location.href =`${envLoginDomainDev}?returnUrl=${returnURl}&domain=localhost`//线上调试登陆地址
-      window.location.href =`${envLoginDomainDev}/login-vite-vue/?returnUrl=${returnURl}&domain=localhost`//本地调试登陆地址
+      window.location.href =`${envLoginDomainDev}/login-vite-vue/?returnUrl=${returnURl}`//本地调试登陆地址
     }
   }, [])
   

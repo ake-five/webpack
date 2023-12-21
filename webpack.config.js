@@ -2,7 +2,7 @@
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');  // html 插件
-
+const TerserPlugin = require('terser-webpack-plugin');
 
 const path = require('path');
 const config = require('./public/config')[process.env.NODE_ENV];
@@ -15,6 +15,14 @@ module.exports = {
     path: path.resolve(__dirname, 'docs'), //必须是绝对路径
     filename: 'bundle.[hash].js',
     publicPath: config.publicPath,
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        // 配置项...
+      }),
+    ],
   },
   module: {
     rules: [
