@@ -16,6 +16,7 @@ function getItem(label, key, icon, children, type) {
     type,
   };
 }
+console.log(process.env.NODE_ENV)
 const items = config[process.env.NODE_ENV].microApps.map(item => {
   return getItem(item.name, item.activeRule, null)
 })
