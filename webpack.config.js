@@ -3,11 +3,14 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');  // html 插件
 const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
 
 const path = require('path');
 const config = require('./public/config')[process.env.NODE_ENV];
 
-module.exports = {
+module.exports =(env, argv)=>{
+  const isProduction = argv.mode === 'production';
+return {
   // mode: 'development',
   mode: "development",
   entry: './src/index.js', //webpack的默认配置
@@ -73,6 +76,9 @@ module.exports = {
   // Plugins 用于执行各种构建任务，从而实现一些额外的功能。它们可以用于优化、压缩、携带环境变量等各种用途。
   // Plugins 可以监听 webpack 构建过程中的生命周期事件，执行特定的任务。
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(isProduction ? 'production' : 'development')
+    }),
     //不需要传参数喔，它可以找到 outputPath
     new CleanWebpackPlugin(), // 每次打包 清楚dist
     new HtmlWebpackPlugin({
@@ -110,4 +116,5 @@ module.exports = {
   // DefinePlugin： 定义全局变量，可用于设置环境变量。
   // CopyWebpackPlugin： 用于复制文件或目录到构建目录。
 
+}
 }
