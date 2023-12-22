@@ -9,6 +9,7 @@ const path = require('path');
 const config = require('./public/config')[process.env.NODE_ENV];
 
 module.exports = (env, argv) => {
+  console.log(env,'11111', argv,process.env.NODE_ENV)
   const isProduction = argv.mode === 'production';
   return {
     // mode: 'development',
@@ -33,21 +34,6 @@ module.exports = (env, argv) => {
           test: /\.js|jsx$/,
           use: {
             loader: 'babel-loader',
-            // Loaders 主要用于处理非 JavaScript 文件。Webpack 将一切视为模块，但默认情况下，
-            // 它只知道如何处理 JavaScript 文件。Loaders 用于将非 JavaScript 文件转换为 Webpack 能够处理的有效模块，
-            // 这样这些文件就能够被添加到依赖图中。
-
-            // options: {
-            //   presets: ["@babel/preset-env"],
-            //   plugins: [
-            //     [
-            //       "@babel/plugin-transform-runtime",
-            //       {
-            //         "corejs": 3
-            //       }
-            //     ]
-            //   ]
-            // }
           },
           exclude: /node_modules/
         },
