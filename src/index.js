@@ -49,7 +49,7 @@ function clearAllCookie() {
       document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
   }
   console.log('====================================');
-  console.log(documnet.cookie);
+  console.log(document.cookie);
   console.log('====================================');
 }
 
