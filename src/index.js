@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { registerMicroApps, start } from 'qiankun';
 import "./styles/index.less";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Layout, Menu, theme, Dropdown, Space } from 'antd';
+import { Layout, Menu, theme, Dropdown, Space, Button, Drawer } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 const { Header, Content, Sider } = Layout;
 
@@ -17,6 +17,7 @@ function getItem(label, key, icon, children, type) {
     type,
   };
 }
+
 const items = config[process.env.NODE_ENV].microApps.map(item => {
   return getItem(item.name, item.activeRule, null)
 })
@@ -107,6 +108,13 @@ function FunctionComponent() {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
   return (
     <Router basename="webpack">
       <Layout style={{
@@ -122,14 +130,14 @@ function FunctionComponent() {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', }}>
-            <div style={{
+            {/* <div style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               width: '170px', height: '50px', color: '#fff', background: '#4078f2', borderRadius: '8px', marginRight: '16px',
             }}>
               应用集成平台
-            </div>
+            </div> */}
             <Dropdown
               menu={{
                 items,
@@ -137,12 +145,20 @@ function FunctionComponent() {
               }}
             >
               <div>
-                <Space onClick={(e) => e.preventDefault()} style={{ color: "#fff" }}>
+                <Space onClick={(e) => e.preventDefault()} style={{ color: "#fff", cursor: 'pointer' }}>
                   MicroApps
                   <DownOutlined />
                 </Space>
               </div>
             </Dropdown>
+            <Button style={{ marginLeft: '16px' }} type="primary" onClick={showDrawer}>
+              添加微应用配置
+            </Button>
+            <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
+              {/* <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p> */}
+            </Drawer>
           </div>
           <Dropdown
             menu={{
