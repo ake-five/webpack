@@ -41,13 +41,18 @@ function getCookie(name) {
   return null;
 }
 start()
-function DeleteCookie(name) {
-  debugger
-  var date = new Date();
-  date.setTime(date.getTime() - 10000); //删除一个cookie，就是将其过期时间设定为一个过去的时间
-  document.cookie = name + "=删除" + "; expires=" + date.toUTCString();
-  //document.cookie = " " + name + "=删除" + "; expires=" + date.toGMTString();
+
+function clearAllCookie() {
+  var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+  if (keys) {
+    for (var i = keys.length; i--;)
+      document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
+  }
+  console.log('====================================');
+  console.log(documnet.cookie);
+  console.log('====================================');
 }
+
 function FunctionComponent() {
   // const location = useLocation()
 
@@ -59,13 +64,18 @@ function FunctionComponent() {
       const envLoginDomainDev = '//ake-five.github.io'
       const returnURl = window.location.href
       window.location.href = `${envLoginDomainDev}/login-vite-vue/?returnUrl=${returnURl}`//本地调试登陆地址
+      return
     }
   }, [])
   const handleMenuClick = (e) => {
     window.location.href = `${window.location.origin}${e.key}`
   };
   const loginout = () => {
-    DeleteCookie('ther')
+    clearAllCookie()
+
+    const envLoginDomainDev = '//ake-five.github.io'
+    const returnURl = window.location.href
+    window.location.href = `${envLoginDomainDev}/login-vite-vue/?returnUrl=${returnURl}`//本地调试登陆地址
   }
   const handleDropdownClick = (e) => {
 
