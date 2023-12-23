@@ -22,7 +22,7 @@ module.exports = {
             {
                 name: '微应用dome1', // app已经注册的名字
                 entry: '//ake-five.github.io/react-manage',  // 进入的主机端口号
-                activeRule: '/webpack/reactdome1',  // 找到微应用的路径
+                activeRule: '/webpack/reactdome1/react-manage/layout',  // 找到微应用的路径
             },
             {
                 name: '微应用dome2', // app已经注册的名字

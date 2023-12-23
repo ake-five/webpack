@@ -49,9 +49,6 @@ function clearAllCookie() {
     for (var i = keys.length; i--;)
       document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
   }
-  console.log('====================================');
-  console.log(document.cookie);
-  console.log('====================================');
 }
 
 function FunctionComponent() {
